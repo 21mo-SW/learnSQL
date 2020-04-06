@@ -29,7 +29,7 @@ SELECT *
 FROM emp
 WHERE job = 'SALESMAN' AND deptno = 30;
 
--- 총무과 : 우리 회사에 JOB이 머가 있는지 보고싶어!!
+-- 총무과 : 우리 회사에 JOB이 머가 있는지 보고싶어!!  DISTINCT는 중복제거
 SELECT DISTINCT job
 FROM emp;
 
@@ -43,12 +43,12 @@ SELECT *
 FROM STUDENT
 WHERE HEIGHT >= 170;
 
---STUDENT테이블에서 GRADE(학년)DL 2학년이거나 3학년인 학생을 검색하시오.
+--STUDENT테이블에서 GRADE(학년)가 2학년이거나 3학년인 학생을 검색하시오.
 SELECT *
 FROM STUDENT
 WHERE GRADE = 2 or grade =3;
 
---쿼리(query) -> 파싱(parsing)
+--쿼리(query) -> 파싱(parsing)  파싱이란 데이터를 조립해 원하는 데이터를 빼내는 프로그램을 하는 것
 SELECT *
 FROM STUDENT
 WHERE GRADE in(2,3);
