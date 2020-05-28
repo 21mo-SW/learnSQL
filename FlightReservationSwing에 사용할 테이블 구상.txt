@@ -1,0 +1,19 @@
+항공사코드와 항공사명	(airlineId, airlineName)
+공항코드와 공항목록 (airportId, airportName)
+
+출발공항ID, 도착공항ID, 출발일, 항공사ID 로 검색
+(departAirportId, arrivalAirportId, departDate, airlineId
+
+항공사이름 출발공항명 도착공항명 출발시간 도착시간  이코노미요금 비즈니스요금 비행기ID
+(airlineName, departAirportName, ArrivalAirportName, departTime, arrivalTime,economyCharge, prestigeCharge, vehicleId
+
+
+총 테이블 5개
+아이디/비번은 flightinfo/pass1234
+
+Airline
+Airport
+Schedule - airlineName, departAirportName, ArrivalAirportName는 외래키 id로
+
+User
+Reservation
