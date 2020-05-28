@@ -1,8 +1,8 @@
-DROP USER c##madang CASCADE; 
+DROP USER c##madang CASCADE;
 
 CREATE USER c##madang IDENTIFIED BY c##madang 
 DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp PROFILE DEFAULT;
-alter user madang default tablespace users quota unlimited on users;
+alter user c##madang default tablespace users quota unlimited on users;
 
 
 GRANT CONNECT, RESOURCE TO c##madang; 

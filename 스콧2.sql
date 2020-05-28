@@ -39,6 +39,7 @@ WHERE E.DEPTNO = D.DEPTNO;
 SELECT *
 FROM DEPT D, EMP E --DEPTNO에 숫자를 넣는 이유는 DB는오브젝트를 쓸 수 없어서이다.그래서 번호를 부여하고 그행을 찾아가기에 그행을 그냥 오브젝트라고 보면된다.
 WHERE D.DEPTNO = E.DEPTNO;
+
 ROLLBACK;
 DELETE FROM DEPT WHERE DEPTNO = 10;
 
@@ -323,7 +324,13 @@ WHERE PAY <ALL (SELECT AVG(PAY)
                 AND D.DCODE = E.DEPTNO;
                 
                 
-CREATE TABLE t_minus
-no1 NUMBER,         --자릿수를 지정하지 않은 명령어
-no2 NUMBER(3),      --정수부 자릿수를 3자리로 지정한 명령어
-no3 NUMBER(3,2));   --소수점 이하 자릿수까지 지정한 명령어
+
+
+
+
+
+
+
+
+
+
